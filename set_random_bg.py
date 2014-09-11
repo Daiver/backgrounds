@@ -5,8 +5,9 @@ def setBG(path):
     os.system('feh --bg-max %s' % path)
 
 def test_name(path):
-    txt = path.lower()[-4:]
-    return txt in ['.jpg', '.png', 'bmp']
+    return path[-3:] != '.py'
+    #txt = path.lower()[-4:]
+    #return txt in ['.jpg', '.png', 'bmp']
     
 
 if __name__ == '__main__':
